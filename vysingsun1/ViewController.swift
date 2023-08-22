@@ -357,8 +357,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .orange
         title = "View"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "closed"), style: .done, target: self, action: #selector(back))
     }
     
+    @objc private func back() {
+//        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
+//        let vc = ViewController()
+//        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 
