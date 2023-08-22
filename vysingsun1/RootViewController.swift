@@ -82,9 +82,10 @@ class RootViewController: UIViewController {
     @objc private func gotWorkspace(){
 //        print("Hello world")
         
-        let vc = ViewController()
+        let vc = WelcomeViewController()
 //        let navc = UINavigationController(rootViewController: vc)
         let navc = UINavigationController(rootViewController: vc)
+        navc.modalPresentationStyle = .overFullScreen
         present(navc, animated: true)
     }
     /*
