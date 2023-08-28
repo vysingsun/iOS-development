@@ -152,6 +152,9 @@ extension WelcomeViewController: UITableViewDelegate {
             if indexPath.row == 0 {
                 let tbVC = TableViewViewController()
                 navigationController?.pushViewController(tbVC, animated: true)
+            }else if indexPath.row == 7 {
+                let tbVC = FormViewController()
+                navigationController?.pushViewController(tbVC, animated: true)
             }
         case 1:
             break

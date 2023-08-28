@@ -16,7 +16,11 @@
 		641FDCC82A8B980D0078B392 /* vysingsun1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641FDCC72A8B980D0078B392 /* vysingsun1Tests.swift */; };
 		641FDCD32A8B980D0078B392 /* vysingsun1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641FDCD22A8B980D0078B392 /* vysingsun1UITests.swift */; };
 		64534F2B2A94E2F2008FC467 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64534F2A2A94E2F2008FC467 /* TableViewViewController.swift */; };
+		646B21232A9625E60023B26E /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B21222A9625E60023B26E /* ContactTableViewCell.swift */; };
+		646B21262A962E4A0023B26E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B21252A962E4A0023B26E /* Contact.swift */; };
 		64CB97272A8F8C72008B104C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CB97262A8F8C72008B104C /* WelcomeViewController.swift */; };
+		64D40C942A97763A00195F9A /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D40C932A97763A00195F9A /* FormViewController.swift */; };
+		64D40C962A97767D00195F9A /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D40C952A97767D00195F9A /* FormView.swift */; };
 		64E120F32A8E428200A7FEFB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E120F22A8E428200A7FEFB /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +57,11 @@
 		641FDCD22A8B980D0078B392 /* vysingsun1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vysingsun1UITests.swift; sourceTree = "<group>"; };
 		641FDCD42A8B980D0078B392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64534F2A2A94E2F2008FC467 /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
+		646B21222A9625E60023B26E /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		646B21252A962E4A0023B26E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		64CB97262A8F8C72008B104C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		64D40C932A97763A00195F9A /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		64D40C952A97767D00195F9A /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		64E120F22A8E428200A7FEFB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,12 +113,11 @@
 		641FDCAF2A8B980C0078B392 /* vysingsun1 */ = {
 			isa = PBXGroup;
 			children = (
+				646B21242A962DF20023B26E /* Models */,
+				646B211E2A9624530023B26E /* Views */,
+				646B211F2A9624670023B26E /* Controllers */,
 				641FDCB02A8B980C0078B392 /* AppDelegate.swift */,
 				641FDCB22A8B980C0078B392 /* SceneDelegate.swift */,
-				641FDCB42A8B980C0078B392 /* ViewController.swift */,
-				64E120F22A8E428200A7FEFB /* RootViewController.swift */,
-				64CB97262A8F8C72008B104C /* WelcomeViewController.swift */,
-				64534F2A2A94E2F2008FC467 /* TableViewViewController.swift */,
 				641FDCB62A8B980C0078B392 /* Main.storyboard */,
 				641FDCB92A8B980D0078B392 /* Assets.xcassets */,
 				641FDCBB2A8B980D0078B392 /* LaunchScreen.storyboard */,
@@ -135,6 +142,35 @@
 				641FDCD42A8B980D0078B392 /* Info.plist */,
 			);
 			path = vysingsun1UITests;
+			sourceTree = "<group>";
+		};
+		646B211E2A9624530023B26E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				646B21222A9625E60023B26E /* ContactTableViewCell.swift */,
+				64D40C952A97767D00195F9A /* FormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		646B211F2A9624670023B26E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64D40C932A97763A00195F9A /* FormViewController.swift */,
+				641FDCB42A8B980C0078B392 /* ViewController.swift */,
+				64E120F22A8E428200A7FEFB /* RootViewController.swift */,
+				64CB97262A8F8C72008B104C /* WelcomeViewController.swift */,
+				64534F2A2A94E2F2008FC467 /* TableViewViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		646B21242A962DF20023B26E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				646B21252A962E4A0023B26E /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D40C942A97763A00195F9A /* FormViewController.swift in Sources */,
 				641FDCB52A8B980C0078B392 /* ViewController.swift in Sources */,
+				64D40C962A97767D00195F9A /* FormView.swift in Sources */,
 				64CB97272A8F8C72008B104C /* WelcomeViewController.swift in Sources */,
 				641FDCB12A8B980C0078B392 /* AppDelegate.swift in Sources */,
 				64E120F32A8E428200A7FEFB /* RootViewController.swift in Sources */,
+				646B21262A962E4A0023B26E /* Contact.swift in Sources */,
+				646B21232A9625E60023B26E /* ContactTableViewCell.swift in Sources */,
 				64534F2B2A94E2F2008FC467 /* TableViewViewController.swift in Sources */,
 				641FDCB32A8B980C0078B392 /* SceneDelegate.swift in Sources */,
 			);
